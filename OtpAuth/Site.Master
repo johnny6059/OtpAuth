@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="OtpAuth.Site" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="/Content/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <h1><a href="/">ASP.NET Identity OTP Demo</a></h1>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="MainCPH" runat="server" />
+        </div>
+    </form>
+    <footer>
+        Copyright &copy; Altairis, 2014-2015
+    </footer>
+</body>
+</html>

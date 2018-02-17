@@ -1,0 +1,123 @@
+﻿$BgColor: #fff;
+$FgColor: #000;
+$AccentColor: #c31;
+$Spacing: 20px;
+
+html {
+    margin: 0;
+    padding: $Spacing;
+    background-color: $BgColor;
+    color: $FgColor;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1100px;
+    font-size: 1em;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+
+    > footer {
+        clear: both;
+        margin: $Spacing 0 0 0;
+        padding: $Spacing/5 0 0 0;
+        border-top: 2px solid $FgColor;
+        text-align: right;
+        font-weight: 100;
+        font-size: 80%;
+    }
+}
+
+a {
+    &:link {
+        color: $AccentColor;
+    }
+
+    &:visited {
+        color: darken($AccentColor, 20);
+    }
+
+    &:hover {
+        color: lighten($AccentColor, 20);
+    }
+}
+
+h1 {
+    margin: 0 0 $Spacing 0;
+    padding: 0 0 $Spacing 0;
+    border-bottom: 2px solid $FgColor;
+    font-weight: 100;
+    font-size: 280%;
+
+    a {
+        color: #000 !important;
+        text-decoration: none;
+    }
+}
+
+h2 {
+    color: $AccentColor;
+    font-weight: 100;
+    font-size: 180%;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 140%;
+}
+
+table.form {
+    border: none;
+    border-collapse: collapse;
+
+    td {
+        padding: $Spacing/3;
+    }
+
+    th {
+        padding: $Spacing/3;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    tfoot td {
+        padding: $Spacing 0 0 0;
+    }
+}
+
+input {
+    font-size: 1em;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: $Spacing/2;
+    border: 2px solid $FgColor;
+    background-color: #eee;
+
+    &[type=text], &[type=password] {
+        width: 30em;
+
+        &:focus {
+            border-color: $AccentColor;
+            background-color: $BgColor;
+        }
+    }
+
+    &[type=submit] {
+        padding: $Spacing/3 $Spacing;
+        background-color: $AccentColor;
+        color: $BgColor;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
+
+.secret {
+    font-family: Consolas, Courier New, Courier, monospace;
+    font-size: 125%;
+    text-align: center;
+    width: 45ex;
+    background-color: #eee;
+    color: $AccentColor;
+    padding: 1ex;
+}
