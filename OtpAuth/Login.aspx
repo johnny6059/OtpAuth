@@ -13,6 +13,9 @@
                             <asp:TextBox ID="UserNameTextBox" runat="server" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="UserNameTextBox" Display="Dynamic" Text="*" ErrorMessage="User name is missing" />
                         </td>
+                        <td>
+                            :)
+                        </td>
                     </tr>
                     <tr>
                         <th>
@@ -21,6 +24,9 @@
                         <td>
                             <asp:TextBox ID="PasswordTextBox" runat="server" TextMode="Password" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="PasswordTextBox" Display="Dynamic" Text="*" ErrorMessage="Password is missing" />
+                        </td>
+                        <td>
+                            :(
                         </td>
                     </tr>
                 </tbody>
