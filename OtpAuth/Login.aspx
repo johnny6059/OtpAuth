@@ -36,6 +36,9 @@
                             <asp:ValidationSummary runat="server" />
                             <asp:Button ID="ButtonFormSubmit" runat="server" Text="Submit" OnClick="ButtonFormSubmit_Click" />
                         </td>
+                        <td>
+                            ;-)
+                        </td>
                     </tr>
                 </tfoot>
             </table>
