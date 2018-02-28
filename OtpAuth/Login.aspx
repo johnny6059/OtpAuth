@@ -7,7 +7,7 @@
                 <tbody>
                     <tr>
                         <th>
-                            <asp:Label runat="server" Text="User name:" AssociatedControlID="UserNameTextBox" />
+                            <asp:Label runat="server" Text="User name (uživatelské jméno):" AssociatedControlID="UserNameTextBox" />
                         </th>
                         <td>
                             <asp:TextBox ID="UserNameTextBox" runat="server" />
@@ -16,7 +16,7 @@
                     </tr>
                     <tr>
                         <th>
-                            <asp:Label runat="server" Text="Password:" AssociatedControlID="PasswordTextBox" />
+                            <asp:Label runat="server" Text="Password: (heslo)" AssociatedControlID="PasswordTextBox" />
                         </th>
                         <td>
                             <asp:TextBox ID="PasswordTextBox" runat="server" TextMode="Password" />
